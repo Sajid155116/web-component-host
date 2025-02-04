@@ -35,9 +35,7 @@ class MyDashboard extends HTMLElement {
   
     async callAPI() {
       // Simulating an API call (replace this with a real fetch call)
-      return new Promise((resolve) => {
-        setTimeout(() => resolve("Hello, World!"), 500);
-      });
+      return await fetch(" http://localhost:3000/hello")
     }
   }
   
